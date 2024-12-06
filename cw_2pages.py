@@ -40,7 +40,21 @@ app = Flask(__name__)
 
 @app.route("/")
 def net():
-    return render_template("cw_setka.html")
+    context={
+        'caption' : "Сетка",
+        'link' : "Куда-то перейти"
+    }
+    #return render_template("cw_setka.html", caption="Сетка", link="Куда-то перейти")
+    return render_template("cw_setka.html", **context) #распаковываем словарь и пробрасываем наши переменные
+
+@app.route("/shablon/")
+def net2():
+    context = {
+        'caption': "Сетка шаблон",
+        'link': "Перейти дальше"
+    }
+    #return render_template("cw_setka.html", caption="Сетка шаблон", link="Перейти дальше")
+    return render_template("cw_setka.html", **context)
 
 @app.route("/card/")
 def card():
