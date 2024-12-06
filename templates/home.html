@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Кто такие эльфы
+{% endblock %}
+
+
+
+{% block content %}
+  <h3 align="center">{{question}}</h3>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12">
+        <div class="card" style="width: 80rem;">
+          <img src="../static/image/1647635065_10-amiel-club-p-kartinki-elfa-10.jpg" class="rounded mx-auto d-block" alt="elf" height="300px">
+          <div class="card-body">
+            <h5 class="card-title">Эльфы</h5>
+            <p class="card-text">Эльф (мн.: эльфы) - это тип гуманоидного сверхъестественного существа в германском
+            фольклоре. Эльфы особенно часто появляются в северогерманской мифологии,
+            упоминаясь в Исландской поэтической Эдде и прозаической Эдде.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
